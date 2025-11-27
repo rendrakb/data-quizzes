@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <rect class="b" x="68" y="73.5" width="264" height="66" rx="10" ry="10"/>
+  <rect class="b" x="68" y="150.5" width="264" height="66" rx="10" ry="10"/>
+  <rect class="b" x="68" y="261.5" width="264" height="66" rx="10" ry="10"/>
+  <line class="b" x1="89.44" y1="106.5" x2="186.71" y2="106.5"/>
+  <line class="b" x1="207.99" y1="106.5" x2="233.52" y2="106.5"/>
+  <line class="b" x1="262.8" y1="106.5" x2="308.76" y2="106.5"/>
+  <line class="b" x1="85.78" y1="183.5" x2="142.57" y2="183.5"/>
+  <line class="b" x1="160.33" y1="183.5" x2="261.1" y2="183.5"/>
+  <line class="b" x1="280.5" y1="183.5" x2="307" y2="183.5"/>
+  <line class="b" x1="85.78" y1="294.5" x2="156.24" y2="294.5"/>
+  <line class="b" x1="167.48" y1="294.5" x2="220.76" y2="294.5"/>
+  <line class="b" x1="231.14" y1="294.5" x2="312" y2="294.5"/>
+</svg>
