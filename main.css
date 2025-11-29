@@ -71,11 +71,20 @@ body {
 }
 
 #portion:hover {
-  background-color: darkviolet;
+  background-color: rebeccapurple;
 }
 
+#price {
+  background-color: royalblue;
+}
+
+#price:hover {
+  background-color: darkslateblue;
+}
+
+
 .footer {
-    font-size: 0.5em;
-    position: fixed;
-    bottom: 0px;
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 0px;
 }
