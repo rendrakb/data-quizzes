@@ -5,7 +5,6 @@ body {
   flex-direction: column;
   background-color: #1a1a1a;
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
   color: white;
 }
 
@@ -14,16 +13,14 @@ body {
   max-width: 450px;
   width: 90vw;
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
 .quiz-icon {
-  width: 40%;
-  height: 200px;
+  width: 30%;
+  height: 100px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -31,11 +28,15 @@ body {
   justify-content: center;
   color: white;
   border: none;
-  font-size: 1em;
-  padding: 20px;
-  padding-top: 0px;
+  font-size: 0.8em;
   font-weight: bold;
   cursor: pointer;
+  gap: 10px;
+  padding-bottom: 10px
+}
+
+img {
+  max-width: 50%;
 }
 
 #note {
@@ -81,7 +82,6 @@ body {
 #price:hover {
   background-color: darkslateblue;
 }
-
 
 .footer {
   font-size: 0.5em;
