@@ -32,7 +32,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   gap: 10px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  transition: filter 150ms ease;
+}
+
+.quiz-icon:hover {
+  filter: brightness(1.15);
 }
 
 img {
@@ -44,43 +49,39 @@ img {
 }
 
 #line {
-  background-color: darkred;
-}
-
-#line:hover {
-  background-color: maroon;
+  background-color: #7f1d1d;
 }
 
 #table {
-  background-color: darkcyan;
-}
-
-#table:hover {
-  background-color: teal;
+  background-color: #155e75;
 }
 
 #narration {
-  background-color: olive;
-}
-
-#narration:hover {
-  background-color: darkolivegreen;
+  background-color: #5b5d12;
 }
 
 #portion {
-  background-color: blueviolet;
-}
-
-#portion:hover {
-  background-color: rebeccapurple;
+  background-color: #6b21a8;
 }
 
 #price {
-  background-color: royalblue;
+  background-color: #1d4ed8;
 }
 
-#price:hover {
-  background-color: darkslateblue;
+#matrix {
+  background-color: #9a3412;
+}
+
+#series {
+  background-color: #166534;
+}
+
+#hidden-series {
+  background-color: #861c62;
+}
+
+#equation {
+  background-color: #3730a3;
 }
 
 .footer {
