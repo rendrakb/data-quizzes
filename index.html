@@ -1,48 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Data Quizzes</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <div class="container">
-        <div id="title">
-            <h1>Data Quizzes Collection</h1>
-            <p id="note">Collections of randomized quizzes related to rapid data reading</p>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" id="home" data-i="title">Data Quizzes</a>
+      <span
+        ><button id="shuf"></button><button id="lang"></button
+        ><button id="theme"></button
+      ></span>
+    </header>
+    <main>
+      <section id="hub">
+        <p id="sub" data-i="subtitle"></p>
+        <div id="grid"></div>
+      </section>
+      <section id="quiz" hidden>
+        <div id="q" class="card"></div>
+        <div id="view"></div>
+        <div class="row">
+          <input id="ans" autocomplete="off" /><button
+            id="submit"
+            data-i="submit"
+          ></button>
         </div>
-    </div>
-    <div class="container" id="quiz-list">
-        <button class="quiz-icon" id="line" onclick="location.href='https://rendrakb.github.io/randomized-chart/'">
-            <img src="line.svg"></image>Line Chart
-        </button>
-        <button class="quiz-icon" id="table" onclick="location.href='https://rendrakb.github.io/randomized-table/'">
-            <img src="table.svg"></image>Table
-        </button>
-        <button class="quiz-icon" id="narration" onclick="location.href='https://rendrakb.github.io/randomized-narration/'">
-            <img src="narration.svg"></image>Narration
-        </button>
-        <button class="quiz-icon" id="portion" onclick="location.href='https://rendrakb.github.io/randomized-portion/'">
-            <img src="portion.svg"></image>Portion
-        </button>
-        <button class="quiz-icon" id="price" onclick="location.href='https://rendrakb.github.io/randomized-price/'">
-            <img src="price.svg"></image>Price
-        </button>
-         <button class="quiz-icon" id="matrix" onclick="location.href='https://rendrakb.github.io/randomized-matrix/'">
-            <img src="matrix.svg"></image>Matrix
-        </button>
-         <button class="quiz-icon" id="series" onclick="location.href='https://rendrakb.github.io/randomized-series/'">
-            <img src="series.svg"></image>Series
-        </button>
-         <button class="quiz-icon" id="hidden-series" onclick="location.href='https://rendrakb.github.io/randomized-hidden-series/'">
-            <img src="hidden-series.svg"></image>Series Table
-        </button>
-         <button class="quiz-icon" id="equation" onclick="location.href='https://rendrakb.github.io/randomized-equation/'">
-            <img src="equation.svg"></image>Equation
-        </button>
-    </div>
-    </div>
-    <div class="footer">RendraKB-2025</div>
-</body>
+        <div id="fb"></div>
+        <div class="row">
+          <button id="show" data-i="show"></button
+          ><button id="next" data-i="next"></button
+          ><button id="rand" data-i="rand"></button>
+        </div>
+        <div class="row stats">
+          <span id="score"></span><span id="last"></span
+          ><span id="total"></span>
+        </div>
+      </section>
+    </main>
+    <footer>RendraKB-2025</footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
