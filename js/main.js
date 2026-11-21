@@ -128,7 +128,12 @@ function submit() {
   $("score").textContent = `${t("score")}: ${S.ok}/${S.n}`;
 }
 $("submit").onclick = submit;
-$("ans").onkeydown = (e) => e.key === "Enter" && submit();
+$("ans").onkeydown = (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    submit();
+  }
+};
 setInterval(
   () =>
     ($("total").textContent =
