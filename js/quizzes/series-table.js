@@ -5,8 +5,8 @@ export default {
   fresh: true,
   title: { en: "Series Table", id: "Tabel Deret" },
   footnote: {
-    en: "Note: Each row connects a unit number with its value.",
-    id: "Keterangan: Setiap baris menghubungkan nomor unit dengan nilainya.",
+    en: "Note: Each row pairs a term with its value. Both the terms and values follow a pattern.",
+    id: "Keterangan: Setiap baris memasangkan urutan dengan nilainya. Urutan dan nilai mengikuti pola.",
   },
   newData() {
     for (;;) {
@@ -26,21 +26,21 @@ export default {
         answer: byVal ? qu : f(qu),
         text: byVal
           ? {
-              en: `What is the unit number of value ${f(qu)}?`,
-              id: `Berapakah nomor unit untuk nilai ${f(qu)}?`,
+              en: `What is the term number of value ${f(qu)}?`,
+              id: `Berapakah urutan dari nilai ${f(qu)}?`,
             }
           : {
-              en: `What is the value of unit ${qu}?`,
-              id: `Berapa nilai unit ${qu}?`,
+              en: `What is the value of term ${qu}?`,
+              id: `Berapa nilai urutan ${qu}?`,
             },
         logic: {
-          en: `Value = ${off || ""}${off ? (sign > 0 ? " + " : " − ") : sign > 0 ? "" : "−"}${step} × unit`,
-          id: `Nilai = ${off || ""}${off ? (sign > 0 ? " + " : " − ") : sign > 0 ? "" : "−"}${step} × unit`,
+          en: `Value = ${off || ""}${off ? (sign > 0 ? " + " : " − ") : sign > 0 ? "" : "−"}${step} × term`,
+          id: `Nilai = ${off || ""}${off ? (sign > 0 ? " + " : " − ") : sign > 0 ? "" : "−"}${step} × urutan`,
         },
       };
     }
   },
   view: (d, lang) =>
-    tbl(d.rows, lang === "id" ? ["Unit", "Nilai"] : ["Unit", "Value"]),
+    tbl(d.rows, lang === "id" ? ["Urutan", "Nilai"] : ["Term", "Value"]),
   ask: (d) => d,
 };
