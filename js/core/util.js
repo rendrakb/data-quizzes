@@ -53,7 +53,10 @@ export const templated = (pools, T) => (d) => {
       .map((x) => v[x]);
     v[k] = rand.pick(pools[base].filter((x) => !used.includes(x)));
   }
-  const replace = (s) => s.replace(/\{(\w+)\}/g, (_, k) => v[k]);
+  const replace = (s) =>
+    s.replace(/\{(\w+)\}/g, (_, k) =>
+      typeof v[k] === "object" ? (v[k][lang] ?? v[k].en) : v[k],
+    );
   return {
     text: { en: replace(text.en), id: replace(text.id) },
     answer: fn(d, v),

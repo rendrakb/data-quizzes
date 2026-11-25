@@ -115,6 +115,10 @@ export default {
   color: "#3730a3",
   fresh: true,
   title: { en: "Equation", id: "Persamaan" },
+  footnote: {
+    en: "Note: Evaluate each expression first, then compare both sides.",
+    id: "Keterangan: Hitung setiap ekspresi terlebih dahulu, lalu bandingkan kedua sisinya.",
+  },
   newData() {
     for (let n = 0; n < 200; n++) {
       const seeds = new Set();

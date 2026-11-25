@@ -94,6 +94,10 @@ export default {
   id: "price",
   color: "#1d4ed8",
   title: { en: "Price", id: "Harga" },
+  footnote: {
+    en: "Note: Total is the total price for the quantity shown.",
+    id: "Keterangan: Total adalah harga keseluruhan untuk jumlah yang ditampilkan.",
+  },
   newData() {
     const items = Object.fromEntries(
       K.map((k) => [

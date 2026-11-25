@@ -85,6 +85,10 @@ export default {
   id: "portion",
   color: "#6b21a8",
   title: { en: "Portion", id: "Proporsi" },
+  footnote: {
+    en: "Note: The values describe the known portions of the overall total.",
+    id: "Keterangan: Nilai-nilai tersebut menunjukkan bagian yang diketahui dari total keseluruhan.",
+  },
   newData() {
     for (;;) {
       const A = rand.int(1, 4) * 100,

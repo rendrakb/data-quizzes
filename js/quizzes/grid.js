@@ -81,10 +81,14 @@ const valid = (r) =>
   new Set(r.m.flat()).size > 1;
 
 export default {
-  id: "matrix",
+  id: "grid",
   color: "#9a3412",
   fresh: true,
-  title: { en: "Matrix", id: "Matriks" },
+  title: { en: "Grid", id: "Grid" },
+  footnote: {
+    en: "Note: Use the pattern in the rows or columns to find x.",
+    id: "Keterangan: Gunakan pola pada baris atau kolom untuk menemukan x.",
+  },
   newData() {
     for (;;) {
       const r = rand.pick([

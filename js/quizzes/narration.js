@@ -107,6 +107,10 @@ export default {
   id: "narration",
   color: "#5b5d12",
   title: { en: "Narration", id: "Narasi" },
+  footnote: {
+    en: "Note: The statements compare totals and letter values between Period 1 and Period 2.",
+    id: "Keterangan: Pernyataan membandingkan total dan nilai huruf antara Periode 1 dan Periode 2.",
+  },
   newData() {
     const s1 = rand.int(1, 10),
       t1 = s1 * 100,

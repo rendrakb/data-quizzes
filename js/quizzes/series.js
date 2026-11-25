@@ -118,6 +118,10 @@ export default {
   color: "#166534",
   fresh: true,
   title: { en: "Series", id: "Deret" },
+  footnote: {
+    en: "Note: The numbers follow a consistent pattern; find the next value.",
+    id: "Keterangan: Bilangan mengikuti pola yang konsisten; temukan nilai berikutnya.",
+  },
   newData() {
     for (;;) {
       const r = rand.pick(BUILD)(9);

@@ -126,6 +126,13 @@ td {
 th {
   background: var(--line);
 }
+.table-footnote {
+  margin: 8px 2px 0;
+  font-size: 0.75em;
+  line-height: 1.4;
+  text-align: left;
+  opacity: 0.75;
+}
 .box {
   background: var(--card);
   border-radius: 4px;

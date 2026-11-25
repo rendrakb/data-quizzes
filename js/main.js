@@ -84,6 +84,13 @@ function randomize() {
 }
 function renderView() {
   $("view").innerHTML = S.quiz.view(S.data, lang);
+  if (S.quiz.footnote) {
+    const text = S.quiz.footnote[lang] ?? S.quiz.footnote.en;
+    $("view").insertAdjacentHTML(
+      "beforeend",
+      `<p class="table-footnote">${text}</p>`,
+    );
+  }
   S.quiz.draw?.($("view"), S.data);
 }
 function ask() {

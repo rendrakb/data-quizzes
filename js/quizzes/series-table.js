@@ -4,6 +4,10 @@ export default {
   color: "#861c62",
   fresh: true,
   title: { en: "Series Table", id: "Tabel Deret" },
+  footnote: {
+    en: "Note: Each row connects a unit number with its value.",
+    id: "Keterangan: Setiap baris menghubungkan nomor unit dengan nilainya.",
+  },
   newData() {
     for (;;) {
       const sign = Math.random() < 0.5 ? 1 : -1,

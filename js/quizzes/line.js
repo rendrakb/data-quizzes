@@ -83,6 +83,10 @@ export default {
   id: "line",
   color: "#7f1d1d",
   title: { en: "Line Chart", id: "Grafik Garis" },
+  footnote: {
+    en: "Note: Each line tracks one letter across numbers 1 to 4.",
+    id: "Keterangan: Setiap garis menunjukkan satu huruf pada angka 1 sampai 4.",
+  },
   newData: () =>
     Object.fromEntries(L.map((l) => [l, N.map(() => rand.int(0, 10) * 100)])),
   view: () => `<div id="chart"><canvas></canvas></div>`,
